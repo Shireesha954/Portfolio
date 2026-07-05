@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Maya Chen</title>
+  <meta name="description" content="Get in touch with Maya Chen about a project, collaboration, or speaking engagement. Accessible contact form with keyboard and screen-reader support." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mayachen.example.com/contact.html" />
+  <meta name="theme-color" content="#0a1622" />
+  <meta name="color-scheme" content="light" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — Maya Chen" />
+  <meta property="og:description" content="Get in touch about a project, collaboration, or speaking engagement." />
+  <meta property="og:url" content="https://mayachen.example.com/contact.html" />
+  <meta property="og:image" content="https://mayachen.example.com/assets/og-cover.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Maya Chen" />
+  <meta name="twitter:description" content="Get in touch about a project, collaboration, or speaking engagement." />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3E%3Crect width=%2224%22 height=%2224%22 fill=%22%230a1622%22/%3E%3Ctext x=%2212%22 y=%2217%22 font-size=%2214%22 fill=%22%23e2933b%22 text-anchor=%22middle%22 font-family=%22monospace%22%3EM%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-wrap header-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">MC</span>
+        <span class="brand-name">Maya Chen</span>
+      </a>
+
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        Menu ▾
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary" data-expanded="false">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p class="sheet-meta">SHEET 04 / 04 — CONTACT</p>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="site-wrap two-col">
+        <div>
+          <span class="eyebrow">Fig. 01 — Reach out</span>
+          <h1 id="contact-heading" class="dim-heading">Get in touch</h1>
+          <p>Have a project, collaboration, or speaking request in mind? Fill in the form and I'll reply within two business days. Every field below can be reached and completed using the keyboard alone.</p>
+
+          <div class="panel">
+            <h2 class="dim-heading">Contact form</h2>
+
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+
+            <form id="contact-form" class="form-grid" novalidate>
+              <fieldset>
+                <legend>Your details</legend>
+
+                <div class="field">
+                  <label for="name">Full name <span class="required-flag" aria-hidden="true">*</span></label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                    aria-required="true"
+                    aria-describedby="name-hint name-error"
+                  />
+                  <span id="name-hint" class="hint">As you'd like to be addressed in a reply.</span>
+                  <span id="name-error" class="error-msg" role="alert"></span>
+                </div>
+
+                <div class="field">
+                  <label for="email">Email address <span class="required-flag" aria-hidden="true">*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    aria-required="true"
+                    aria-describedby="email-hint email-error"
+                  />
+                  <span id="email-hint" class="hint">Used only to reply to this message.</span>
+                  <span id="email-error" class="error-msg" role="alert"></span>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Project details</legend>
+
+                <div class="field">
+                  <label for="project-type">What kind of project is this?</label>
+                  <select id="project-type" name="project-type">
+                    <option value="engineering">Frontend engineering</option>
+                    <option value="design-system">Design system</option>
+                    <option value="installation">Art / installation</option>
+                    <option value="speaking">Speaking or workshop</option>
+                    <option value="other">Something else</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="message">Message <span class="required-flag" aria-hidden="true">*</span></label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required
+                    aria-required="true"
+                    aria-describedby="message-hint message-error"
+                  ></textarea>
+                  <span id="message-hint" class="hint">A few sentences about the project, timeline, and budget range are helpful.</span>
+                  <span id="message-error" class="error-msg" role="alert"></span>
+                </div>
+              </fieldset>
+
+              <p><span class="required-flag" aria-hidden="true">*</span> Required field.</p>
+
+              <p>
+                <button type="submit" class="btn btn-primary">Send message</button>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <aside aria-labelledby="alt-contact-heading">
+          <span class="eyebrow">Fig. 02 — Other ways</span>
+          <h2 id="alt-contact-heading" class="dim-heading">Other ways to reach me</h2>
+          <ul class="tag-list" style="flex-direction: column; align-items: flex-start; gap: 0.75rem;">
+            <li><a href="mailto:hello@mayachen.example.com">hello@mayachen.example.com</a></li>
+            <li><a href="https://www.linkedin.com/in/example" rel="me noopener" target="_blank">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://github.com/example" rel="me noopener" target="_blank">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          </ul>
+          <p class="hint">Based in Hyderabad, India — working with clients across time zones.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-wrap footer-grid">
+      <section aria-labelledby="footer-nav-heading">
+        <h2 id="footer-nav-heading">Site</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="footer-elsewhere-heading">
+        <h2 id="footer-elsewhere-heading">Elsewhere</h2>
+        <ul>
+          <li><a href="https://github.com/example" rel="me noopener" target="_blank">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          <li><a href="https://www.linkedin.com/in/example" rel="me noopener" target="_blank">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="footer-contact-heading">
+        <h2 id="footer-contact-heading">Contact</h2>
+        <ul>
+          <li><a href="mailto:hello@mayachen.example.com">hello@mayachen.example.com</a></li>
+          <li>Hyderabad, India (remote-friendly)</li>
+        </ul>
+      </section>
+    </div>
+    <div class="site-wrap footer-bottom">
+      <p>© <span id="current-year">2026</span> Maya Chen. All rights reserved.</p>
+      <p>Built with semantic HTML5 &amp; a lot of graph paper.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

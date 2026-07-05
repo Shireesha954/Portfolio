@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Selected Projects by Maya Chen</title>
+  <meta name="description" content="Selected projects by Maya Chen: Loom, Cartograph, Tidepool, and Fieldnotes — accessible web tools, design systems, and generative-art installations." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mayachen.example.com/work.html" />
+  <meta name="theme-color" content="#0a1622" />
+  <meta name="color-scheme" content="light" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Work — Selected Projects by Maya Chen" />
+  <meta property="og:description" content="Accessible web tools, design systems, and generative-art installations." />
+  <meta property="og:url" content="https://mayachen.example.com/work.html" />
+  <meta property="og:image" content="https://mayachen.example.com/assets/og-cover.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Work — Selected Projects by Maya Chen" />
+  <meta name="twitter:description" content="Accessible web tools, design systems, and generative-art installations." />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3E%3Crect width=%2224%22 height=%2224%22 fill=%22%230a1622%22/%3E%3Ctext x=%2212%22 y=%2217%22 font-size=%2214%22 fill=%22%23e2933b%22 text-anchor=%22middle%22 font-family=%22monospace%22%3EM%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-wrap header-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">MC</span>
+        <span class="brand-name">Maya Chen</span>
+      </a>
+
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        Menu ▾
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary" data-expanded="false">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html" aria-current="page">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p class="sheet-meta">SHEET 03 / 04 — WORK</p>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section" aria-labelledby="work-heading">
+      <div class="site-wrap">
+        <span class="eyebrow">Fig. 00 — Index</span>
+        <h1 id="work-heading" class="dim-heading">Selected work</h1>
+        <p>Four projects spanning production web apps, design systems, and one-off installations. Each includes the problem, the approach, and where it landed.</p>
+      </div>
+    </section>
+
+    <section class="section" id="loom" aria-labelledby="loom-heading">
+      <div class="site-wrap panel">
+        <span class="eyebrow">Fig. A — Web app</span>
+        <h2 id="loom-heading" class="dim-heading">Loom</h2>
+        <article>
+          <p><strong>Problem:</strong> Textile designers were hand-drafting weave patterns in spreadsheets, with no way to preview the finished cloth before it went on the loom.</p>
+          <p><strong>Approach:</strong> Built a canvas-based simulator that renders warp and weft interactions in real time, exportable as a loom-ready draft file. Built with vanilla JavaScript and Canvas for performance on low-power studio machines.</p>
+          <p><strong>Result:</strong> Adopted by two textile studios; cut sampling time for new patterns by roughly half, by their own estimate.</p>
+          <ul class="tag-list">
+            <li>Canvas API</li>
+            <li>Vanilla JS</li>
+            <li>File export</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="cartograph" aria-labelledby="cartograph-heading">
+      <div class="site-wrap panel">
+        <span class="eyebrow">Fig. B — Design system</span>
+        <h2 id="cartograph-heading" class="dim-heading">Cartograph</h2>
+        <article>
+          <p><strong>Problem:</strong> A metro transit agency had three separate rider-facing apps, each with its own inconsistent — and largely inaccessible — map component.</p>
+          <p><strong>Approach:</strong> Designed and led a shared React component library with keyboard-navigable maps, high-contrast route overlays, and screen-reader-friendly stop announcements, backed by an internal accessibility audit process.</p>
+          <p><strong>Result:</strong> Rolled out across all three apps; the agency's next public audit reported full WCAG 2.1 AA conformance for the map components.</p>
+          <ul class="tag-list">
+            <li>React</li>
+            <li>ARIA live regions</li>
+            <li>Design tokens</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="tidepool" aria-labelledby="tidepool-heading">
+      <div class="site-wrap panel">
+        <span class="eyebrow">Fig. C — Installation</span>
+        <h2 id="tidepool-heading" class="dim-heading">Tidepool</h2>
+        <article>
+          <p><strong>Problem:</strong> Wanted to explore whether ambient light could respond to a room's sound the way a tidepool responds to the tide — a personal studio brief, not a client one.</p>
+          <p><strong>Approach:</strong> Built a Web MIDI controller paired with an Arduino-driven light rig, translating ambient audio input into slow, layered color shifts.</p>
+          <p><strong>Result:</strong> Shown at a local maker fair over a single weekend; the piece ran unattended for eight hours a day without a single dropped frame.</p>
+          <ul class="tag-list">
+            <li>Web MIDI</li>
+            <li>Arduino</li>
+            <li>Generative audio</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="fieldnotes" aria-labelledby="fieldnotes-heading">
+      <div class="site-wrap panel">
+        <span class="eyebrow">Fig. D — Publishing tool</span>
+        <h2 id="fieldnotes-heading" class="dim-heading">Fieldnotes</h2>
+        <article>
+          <p><strong>Problem:</strong> Independent researchers needed a lightweight way to publish field notes with maps and photos, without adopting a full CMS.</p>
+          <p><strong>Approach:</strong> A static-site generator with a semantic HTML template library, built so every generated page passes an automated accessibility check before publishing.</p>
+          <p><strong>Result:</strong> Used by a handful of independent researchers; one field journal built with it now has a small recurring readership.</p>
+          <ul class="tag-list">
+            <li>Static site generation</li>
+            <li>Semantic HTML</li>
+            <li>Automated a11y checks</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-wrap footer-grid">
+      <section aria-labelledby="footer-nav-heading">
+        <h2 id="footer-nav-heading">Site</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="footer-elsewhere-heading">
+        <h2 id="footer-elsewhere-heading">Elsewhere</h2>
+        <ul>
+          <li><a href="https://github.com/example" rel="me noopener" target="_blank">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          <li><a href="https://www.linkedin.com/in/example" rel="me noopener" target="_blank">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="footer-contact-heading">
+        <h2 id="footer-contact-heading">Contact</h2>
+        <ul>
+          <li><a href="mailto:hello@mayachen.example.com">hello@mayachen.example.com</a></li>
+          <li>Hyderabad, India (remote-friendly)</li>
+        </ul>
+      </section>
+    </div>
+    <div class="site-wrap footer-bottom">
+      <p>© <span id="current-year">2026</span> Maya Chen. All rights reserved.</p>
+      <p>Built with semantic HTML5 &amp; a lot of graph paper.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
